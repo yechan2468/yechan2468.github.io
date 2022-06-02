@@ -1,0 +1,56 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Department of Software Convergence, Kyunghee University
+    url: "https://www.swcon.khu.ac.kr"
+    location: Yongin-si, Gyeonggi-do, South Korea
+    overview: Learned basic CS/CE knowledge In Department of Software Convergence.
+  positions:
+  - designation: Student
+    start: March 2019
+    end: Jun 2020
+    # responsibilities:
+    # - Write lots of example codes.
+    # - Read lots of examples.
+    # - See lots of example videos.
+- company:
+    name: Mobile Team, at Information and System Management Wing
+    url: "http://rokaf.airforce.mil.kr/airforce/index.do"
+    location: Republic of Korea Air Force
+    # company overview
+    overview: Information and System Management Wing develop/manages nearly almost systems and softwares that is used in Republic of Korea Air Force. As a part of Information and System Management Wing, Mobile Team manages LTE networks and servers for mobile applications and systems.
+  positions:
+  - designation: Mobile System Engineer
+    start: Oct 2020
+    end: Jul 2022
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Manage linux server resources, logs and networks as an server administrator
+    - Design, develop and manage automation tool that checks system health, security, and service usages
+    - Manage WAS and databases, used by mobile applications
+    - Manage nationwide LTE networks in South Korea
+
+- company:
+    name: Department of Software Convergence, Kyunghee University
+    url: "https://www.swcon.khu.ac.kr"
+    location: Yongin-si, Gyeonggi-do, South Korea
+    overview: Learning...
+  positions:
+  - designation: Student
+    start: Sep 2022
+    responsibilities:
+    # - Write lots of example codes.
+    # - Read lots of examples.
+    # - See lots of example videos.

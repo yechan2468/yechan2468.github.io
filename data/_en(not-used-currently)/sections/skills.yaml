@@ -1,0 +1,26 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Python
+  logo: "/images/sections/skills/python.png"
+  summary: "Using as the main language for development."
+  url: "https://python.org"
+
+- name: Linux
+  logo: "/images/sections/skills/linux.png"
+  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+  url: "https://golang.org/"
+
+- name: C++
+  logo: "/images/sections/skills/cpp.png"
+  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."

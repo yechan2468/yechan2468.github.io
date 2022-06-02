@@ -1,0 +1,26 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: false
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Python
+  logo: "/images/sections/skills/python.png"
+  summary: "주 언어로 사용하고 있고, 모바일체계운영팀에서도 파이썬을 사용해 자동화 도구를 만든 바 있습니다. 'Simple is better than complex, Complex is better than complicated' 라는 언어의 지향점이 저와 잘 맞고, 다양한 라이브러리들로 여러 시도들을 할 수 있다는 점에 매력을 느껴 즐겨 사용하고 있습니다."
+  url: "https://www.python.org/"
+
+- name: Linux
+  logo: "/images/sections/skills/linux.png"
+  summary: "리눅스 중에서도 Ubuntu distro를 자주 사용해 왔습니다. 메인 데스크탑에 Ubuntu를 직접 설치해 사용해 왔고, 현재는 Ubuntu Server를 사용해 개인 프로젝트들을 하고 있습니다."
+  url: "https://www.linux.org/"
+
+- name: C++
+  logo: "/images/sections/skills/cpp.png"
+  summary: "알고리즘 문제 해결을 위해 자주 사용합니다."

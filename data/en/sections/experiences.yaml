@@ -1,0 +1,55 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: false
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: 소프트웨어융합대학 소프트웨어융합학과
+    url: "https://www.swcon.khu.ac.kr"
+    location: 경희대학교
+    overview: 미적분, 선형대수 등 기초수학, Python과 C++ 등 기초 프로그래밍 지식, 소프트웨어 개발 도구 및 방법 등을 배웠습니다.
+  positions:
+  - designation: 학생
+    start: 2019년 3월
+    end: 2020년 6월
+    # responsibilities:
+    # - Write lots of example codes.
+    # - Read lots of examples.
+    # - See lots of example videos.
+- company:
+    name: 공군정보체계관리단 모바일체계운영팀
+    url: "http://rokaf.airforce.mil.kr/airforce/index.do"
+    location: 대한민국 공군
+    # company overview
+    overview: 정보체계관리단에서는 공군에서 사용하는 거의 대부분의 체계와 소프트웨어를 개발하고 관리합니다. 병사에게 개발을 시키는 전국에서 몇 되지 않는 부대입니다. 제가 근무했던 모바일체계운영팀에서는 모바일 체계와 앱들을 위한 LTE 유/무선 네트워크와 서버 등을 관리합니다.
+  positions:
+  - designation: 모바일관리병
+    start: 2020년 10월
+    end: 2022년 7월
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - 서버 administrator로서 스무 개가 넘는 리눅스 서버들의 자원과 네트워크, 로그 등을 관리했습니다.
+    - 시스템 상태, 보안, 서비스 사용량 등을 확인하는 자동화 도구를 설계, 개발, 관리했습니다.
+    - 모바일 어플리케이션들이 사용하는 WAS와 데이터베이스를 관리했습니다.
+    - 대한민국 전국의 LTE 네트워크를 관제하고 이상 유무를 확인했습니다.
+- company:
+    name: 소프트웨어융합대학 소프트웨어융합학과
+    url: "https://www.swcon.khu.ac.kr"
+    location: 경희대학교
+    overview: 열심히 배우는 중...
+  positions:
+  - designation: 학생
+    start: 2022년 9월
+    responsibilities:
+    # - Write lots of example codes.
+    # - Read lots of examples.
+    # - See lots of example videos.
