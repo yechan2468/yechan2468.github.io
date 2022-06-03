@@ -1,8 +1,8 @@
 ---
 title: "Hugo로 블로그 만들기"
 description: "Hugo + Github Pages를 이용해 나만의 개발 블로그 만들기"
-date: 2022-06-03T14:20:40+09:00
-# hero: /images/posts/language/python/17.jpg
+date: 2022-06-03T21:45:40+09:00
+hero: /images/hugo.png
 theme: Toha
 menu:
   sidebar:
@@ -24,7 +24,7 @@ draft: false
 
 <br>
 
-Hugo를 이용해 정적 웹사이트를 만들고, Github Pages를 통해 나만의 웹사이트를 배포합니다.<br>
+Hugo를 이용해 정적 웹사이트를 만들고, Github Pages를 통해 나만의 웹사이트를 배포합니다.
 
 <br>
 
@@ -74,17 +74,17 @@ Hugo는 정적 웹사이트를 쉽게 만들게 해주는 툴이다.<br>
 
 <br>
 
-###### Jekyll
+##### Jekyll
 - 루비 기반
 - 가장 인기 있는 툴. 사람들이 많이 사용하기 때문에 문제가 발생했을 때 커뮤니티에서 쉽게 도움을 받을 수 있음
 - 컨텐츠가 많으면 빌드 속도가 느려짐
 
-###### Hexo
+##### Hexo
 - Node.js 기반
 - 한국어 documentation이 잘 되어 있음
 - 확장성이 뛰어남 ([공식 플러그인 링크](https://hexo.io/plugins/))
 
-###### Hugo
+##### Hugo
 - Go 언어 기반
 - 아주 빠른 빌드 속도
 - 문서화가 잘 되어 있음
@@ -122,14 +122,14 @@ Hugo에서는 기본 테마가 없고, [Hugo 공식 사이트](https://themes.go
 이때, 테마 별로 설치 방법이 상이한 경우가 있으므로, 테마 안의 공식 문서를 잘 확인하고 과정을 따라주어야 한다.<br>
 모든 과정을 마치고 터미널 창에 `hugo version`을 입력했을 때, (Windows 운영체제 기준으로 설명)<br>
 
-```
+```console
 > hugo version
 'hugo'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다.
 ```
 
 또는 
 
-```
+```console
 > hugo version
 hugo : 'hugo' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
 ...
@@ -140,7 +140,7 @@ hugo : 'hugo' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수
 <br>
 그렇지 않고 <br>
 
-```
+```console
 > hugo version
 hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
 ```
@@ -153,17 +153,27 @@ hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2
 
 <br>
 
-```
-hugo server
+##### hugo server
+
+<br>
+
+```console
+> hugo server
 ```
 
 작업한 내용을 로컬에서 확인할 수 있도록 로컬 웹 서버를 열어준다.<br>
 여기에서 웹페이지에 문제가 있는지 확인한 후 빌드를 할 수 있다.<br>
 포트 기본값은 1313이다.<br>
-위 명령어를 입력한 뒤 [http://localhost:1313](http://localhost:1313)를 확인해보자.<br><br>
+위 명령어를 입력한 뒤 [http://localhost:1313](http://localhost:1313)를 확인해보자.<br>
 
-```
-hugo
+<br>
+
+##### hugo
+
+<br>
+
+```console
+> hugo
 ```
 
 작업한 내용을 빌드한다. 빌드한 내용은 `<hugo new site를 통해 만든 디렉터리>/public/`에 저장된다.<br> 
@@ -209,13 +219,13 @@ Toha 공식 사이트의 [Getting Started](https://toha-guides.netlify.app/posts
 
 <br>
 
-###### 자주 발생하는 에러
+##### 자주 발생하는 에러
 
 <br>
 
 웹사이트에 깨지는 부분이 있을 때 (주로 이미지 파일을 정해진 위치에 넣지 않았을 때) 다음 에러 메시지가 발생한다.<br>
 
-```
+```console
 C:\yechan\code\blog>hugo server
 Start building sites …
 hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
@@ -225,6 +235,8 @@ Error: Error building site: failed to render pages: render of "page" failed: "C:
 Built in 283 ms
 ```
 
+<br>
+
 위 에러 메시지는 author의 이미지가 없어 home이라는 page를 렌더링하는 데에 실패했다는 메시지이다.<br>
 이미지를 로드하는 기본 위치는 `<hugo new site를 통해 만든 디렉터리>/assets/images`이다. (`/theme/toha/assets/images` 안에 넣어도 동작은 하나, 권장하지 않음)<br>
 따라서, `/data/sections/author.yaml`에 `image: "images/author/author.png"`라고 적혀 있다면 `<site 디렉터리>/assets/images/author/author.png`를 저장해주면 된다.<br>
@@ -232,7 +244,7 @@ Built in 283 ms
 
 <br>
 
-###### Toha 테마 
+##### Toha 테마 
 
 <br>
 
@@ -265,7 +277,7 @@ site 디렉터리(`/`), 배포용 디렉터리(`/public/`)를 각각의 reposito
 
 <br>
 
-```
+```yaml
 name: github pages
 
 on:
@@ -310,12 +322,12 @@ jobs:
 
 <br>
 
-###### 1. git push가 안돼요.
+##### 1. git push가 안돼요.
 
 만약 `<사용자 이름>.github.io` repository를 처음 만들 때 `README.md`를 추가했다면 원격 저장소와 로컬 저장소의 내용이 달라 푸쉬가 되지 않을 수 있다.<br>
 - `<사용자 이름>.github.io` repository에 아무 내용이 없다면, repository를 삭제 후 아무 파일 없는 상태로 새로 만들어 다시 시도해보거나, 또는 `git fetch`를 시도해 보자.<br>
 
-###### 2. Github Actions가 잘 동작하지 않아요.
+##### 2. Github Actions가 잘 동작하지 않아요.
 
 - `<사용자 이름>.github.io` repository의 Actions 탭에서 실패한 Action을 확인해보고, 어디에서 오류가 났는지 확인해 보자.<br>
 - `hugo server` 명령어를 통해 웹페이지를 렌더링하는 과정에서 오류가 없는지 다시 한번 확인해보자.<br>

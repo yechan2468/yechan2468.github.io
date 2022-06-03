@@ -25,6 +25,12 @@ markup:
     startLevel: 2
     endLevel: 6
     ordered: false
+  # markdown renderer
+  goldmark:
+    renderer:
+      # <br> 와 같은 raw HTML tag들을 렌더해줌
+      unsafe: true
+      hardWraps: true
 
 # Enable global emoji support
 enableEmoji: true
