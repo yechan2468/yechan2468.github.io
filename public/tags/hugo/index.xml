@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Yechan&#39;s Blog</title>
+    <link>https://yechan2468.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Yechan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 03 Jun 2022 14:20:40 +0900</lastBuildDate><atom:link href="https://yechan2468.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Hugo로 블로그 만들기</title>
+      <link>https://yechan2468.github.io/posts/review/src/make-blog-review/</link>
+      <pubDate>Fri, 03 Jun 2022 14:20:40 +0900</pubDate>
+      
+      <guid>https://yechan2468.github.io/posts/review/src/make-blog-review/</guid>
+      <description>이 글에서는&amp;hellip; Hugo를 이용해 정적 웹사이트를 만들고, Github Pages를 통해 나만의 웹사이트를 배포합니다.
+Hugo란? Hugo 공식 웹사이트 바로가기
+Hugo는 정적 웹사이트를 쉽게 만들게 해주는 툴이다.
+Hugo를 선택한 이유 블로그를 만든 이유 우선 내가 블로그를 만든 이유를 간단히 적어보면 다음과 같다.
+개발이나 공부를 할 때 기록할 곳이 필요했다. 공부를 하더라도 몇 개월 있으면 공부했던 내용을 잊어버리는 일이 잦았다. 개인 웹사이트가 있으면 내가 공부한 것이 무엇인지, 내가 관심 있는 것이 무엇인지 효과적으로 사람들에게 알릴 수 있다.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

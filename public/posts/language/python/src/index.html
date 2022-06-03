@@ -1,35 +1,733 @@
-<!doctype html><html><head><title>How to Python</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/layouts/main.css><link rel=stylesheet href=/css/navigators/navbar.css><link rel=stylesheet href=/css/plyr.css><link rel=stylesheet href=/css/flag-icon.min.css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600"><link rel=stylesheet href=/fontawesome/css/all.min.css><meta property="og:title" content="How to Python"><meta property="og:description" content="how to write python code"><meta property="og:type" content="article"><meta property="og:url" content="https://yechan2468.github.io/posts/language/python/src/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2020-06-08T06:00:23+06:00"><meta property="article:modified_time" content="2020-06-08T06:00:23+06:00"><meta property="og:site_name" content="Yechan's Blog"><meta name=description content="how to write python code"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css><link rel=stylesheet href=/css/layouts/single.css><link rel=stylesheet href=/css/navigators/sidebar.css><link rel=stylesheet href=/css/style.css></head><body data-spy=scroll data-target=#TableOfContents data-offset=80><div class="container-fluid bg-dimmed wrapper"><nav class="navbar navbar-expand-xl top-navbar final-navbar shadow"><div class=container><button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
-<span class=navbar-toggler-icon></span></button>
-<a class=navbar-brand href=/>Yechan's Blog</a>
-<button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse lang-selector" id=top-nav-items><ul class="navbar-nav ml-auto"></ul></div></div></nav><section class=sidebar-section id=sidebar-section><div class=sidebar-holder><div class=sidebar id=sidebar><form class=mx-auto method=get action=/search><input type=text name=keyword placeholder=Search data-search id=search-box></form><div class=sidebar-tree><ul class=tree id=tree><li id=list-heading><a href=/posts data-filter=all>Posts</a></li><div class=subtree><li><i class="fas fa-plus-circle"></i><a href=/posts/computer-science/>Computer Science</a><ul><li><a href=/posts/computer-science/operating-system/ title="Operating System">Operating System</a></li><li><a href=/posts/computer-science/data-structure/ title="Data Structure">Data Structure</a></li><li><a href=/posts/computer-science/algorithm/ title=Algorithm>Algorithm</a></li><li><a href=/posts/computer-science/network/ title="Computer Network">Computer Network</a></li><li><a href=/posts/computer-science/software-engineering/ title="Software Engineering">Software Engineering</a></li></ul></li><li><i class="fas fa-plus-circle"></i><a href=/posts/algorithm-problem/>Algorithm Problem</a><ul><li><a href=/posts/algorithm-problem/bfs-dfs/ title="BFS / DFS">BFS / DFS</a></li><li><a href=/posts/algorithm-problem/bruteforce/ title=Bruteforce>Bruteforce</a></li><li><a href=/posts/algorithm-problem/dynamic-programming/ title="Dynamic Programming">Dynamic Programming</a></li><li><a href=/posts/algorithm-problem/greedy/ title=Greedy>Greedy</a></li><li><a href=/posts/algorithm-problem/implementation/ title=Implementation>Implementation</a></li><li><a href=/posts/algorithm-problem/mathematics/ title=Mathematics>Mathematics</a></li><li><a href=/posts/algorithm-problem/sorting/ title=Sorting>Sorting</a></li><li><a href=/posts/algorithm-problem/string/ title=String>String</a></li></ul></li><li><i class="fas fa-minus-circle"></i><a class=active href=/posts/language/>Language</a><ul class=active><li><i class="fas fa-minus-circle"></i><a class=active href=/posts/language/python/>Python</a><ul class=active><li><a class=active href=/posts/language/python/src/ title="1. How to install Python">1. How to install Python</a></li></ul></li></ul></li><li><i class="fas fa-plus-circle"></i><a href=/posts/framework-tool/>Framework / Tool</a><ul><li><a href=/posts/framework-tool/spring-boot/ title="Spring Boot">Spring Boot</a></li></ul></li><li><a href=/posts/review/ title=Review>Review</a></li><li><a href=/posts/opinion/ title=Opinion>Opinion</a></li></div></ul></div></div></div></section><section class=content-section id=content-section><div class=content><div class="container p-0 read-area"><div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://yechan2468.github.io/images/default-hero.jpg)></div><div class=page-content><div class="author-profile ml-auto align-self-lg-center"><img class=rounded-circle src=/images/author/yechan_hu3a4393067c8576d23847817abbc35178_19485_120x120_fit_box_3.png alt="Author Image"><h5 class=author-name>이예찬</h5><p>Monday, June 8, 2020</p></div><div class=title><h1>How to Python</h1></div><div class=post-content id=post-content><h3 id=complete-post-coming-soon>Complete Post Coming Soon&mldr;</h3><p>asdf
-asdf</p><p>asdf
-a
-sdf
-asdf
-asd
-fa
-sdfa
-sdf
-asdf
-asd
-fa
-sdf
-asd
-fa
-sdf</p><p>asdfasdf
-asdfasdfasdf</p><p>asdfasdfasdf</p><p>asdfasdf</p></div><div class="row pl-3 pr-3"><div class="col-md-6 share-buttons"></div><div class="col-md-6 btn-improve-page"><a href=https://github.com/yechan2468/yechan2468.github.io/edit/main/content/posts%5clanguage%5cpython%5csrc%5cindex.md title="Improve this page" target=_blank rel=noopener><i class="fas fa-code-branch"></i>
-Improve this page</a></div></div><hr><div class="row next-prev-navigator"><div class="col-md-6 previous-article"><a href=/posts/algorithm-problem/string/ title=String class="btn btn-outline-info"><div><i class="fas fa-chevron-circle-left"></i> Prev</div><div class=next-prev-text>String</div></a></div><div class="col-md-6 next-article"><a href=/posts/framework-tool/spring-boot/ title="Spring Boot" class="btn btn-outline-info"><div>Next <i class="fas fa-chevron-circle-right"></i></div><div class=next-prev-text>Spring Boot</div></a></div></div><hr></div></div></div><a id=scroll-to-top class=btn><i class="fas fa-chevron-circle-up"></i></a></section><section class=toc-section id=toc-section><div class=toc-holder><h5 class="text-center pl-3">Table of Contents</h5><hr><div class=toc><nav id=TableOfContents><ul><li><ul><li><a href=#complete-post-coming-soon>Complete Post Coming Soon&mldr;</a></li></ul></li></ul></nav></div></div></section></div><footer id=footer class="container-fluid text-center align-content-center footer pb-2"><div class="container pt-5"><div class="row text-left"><div class="col-md-4 col-sm-12"><h5>Navigation</h5><ul></ul></div><div class="col-md-4 col-sm-12"><h5>Contact me:</h5><ul><li><a href=mailto:yechan24680@gmail.com target=_blank rel=noopener><span><i class="fas fa-envelope"></i></span> <span>yechan24680@gmail.com</span></a></li></ul></div><div class="col-md-4 col-sm-12"><p>Stay up to date with email notification</p><form method=post action=https://blogtrottr.com><div class=form-group><input type=email class=form-control name=btr_email placeholder="Enter email"><br><input type=hidden name=btr_url value=https://yechan2468.github.ioindex.xml>
-<input type=hidden name=schedule_type value=1>
-<small id=emailHelp class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-<button type=submit class="btn btn-info"> Submit</button></div></form></div></div></div><hr><div class=container><div class="row text-left"><div class=col-md-4><a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener><img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png alt="Toha Theme Logo">
-Toha</a></div><div class="col-md-4 text-center">© 2022 Copyright.</div><div class="col-md-4 text-right"><a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
-<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18></a></div></div></div></footer><script type=text/javascript src=/js/jquery-3.4.1.min.js></script>
-<script type=text/javascript src=/js/popper.min.js></script>
-<script type=text/javascript src=/js/bootstrap.min.js></script>
-<script type=text/javascript src=/js/navbar.js></script>
-<script type=text/javascript src=/js/plyr.js></script>
-<script type=text/javascript src=/js/main.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js></script>
-<script src=/js/single.js></script>
-<script>hljs.initHighlightingOnLoad()</script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>파이썬 설치하기</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+<meta property="og:title" content="파이썬 설치하기" />
+<meta property="og:description" content="파이썬 어떻게 설치하는 거에요??" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yechan2468.github.io/posts/language/python/src/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-06-08T06:00:23+06:00" />
+<meta property="article:modified_time" content="2020-06-08T06:00:23+06:00" /><meta property="og:site_name" content="Yechan&#39;s Blog" />
+
+
+
+    
+    
+<meta name="description" content="파이썬 어떻게 설치하는 거에요??" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      Yechan&#39;s Blog</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="찾기" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">게시글</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/computer-science/">Computer Science</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/operating-system/" title="Operating System">Operating System</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/data-structure/" title="Data Structure">Data Structure</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/algorithm/" title="Algorithm">Algorithm</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/network/" title="Computer Network">Computer Network</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/software-engineering/" title="Software Engineering">Software Engineering</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/algorithm-problem/">Algorithm Problem</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/bfs-dfs/" title="BFS / DFS">BFS / DFS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/bruteforce/" title="Bruteforce">Bruteforce</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/dynamic-programming/" title="Dynamic Programming">Dynamic Programming</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/greedy/" title="Greedy">Greedy</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/implementation/" title="Implementation">Implementation</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/mathematics/" title="Mathematics">Mathematics</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/sorting/" title="Sorting">Sorting</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/string/" title="String">String</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/language/">Language</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/language/python/">Python</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/language/python/src/" title="파이썬 설치">파이썬 설치</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/framework-tool/">Framework / Tool</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/framework-tool/spring-boot/" title="Spring Boot">Spring Boot</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/review/">Review</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/review/src/make-blog-review/" title="Hugo로 블로그 만들기">Hugo로 블로그 만들기</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/opinion/" title="Opinion">Opinion</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://yechan2468.github.io/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/yechan_hu3a4393067c8576d23847817abbc35178_19485_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">이예찬</h5>
+          <p>2020년 6월 8일 월요일</p>
+        </div>
+
+        <div class="title">
+          <h1>파이썬 설치하기</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <h3 id="제목입니당-">제목입니당 \\</h3>
+<p>한글이 잘 출력되는지</p>
+<p>테스트합니다~ ✔</p>
+<p>값않뚫꽤</p>
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/yechan2468/yechan2468.github.io/edit/main/content/posts%5clanguage%5cpython%5csrc%5cindex.md" title="이 페이지 개선하기" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                이 페이지 개선하기
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/algorithm-problem/string/" title="String" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> 이전 게시글</div>
+        <div class="next-prev-text">String</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/framework-tool/spring-boot/" title="Spring Boot" class="btn btn-outline-info">
+          <div>다음 게시글 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Spring Boot</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">목차</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#제목입니당-">제목입니당 \\</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>바로가기</h5>
+          
+          <ul>
+              
+              
+              
+              
+              
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>연락처:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:yechan24680@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>yechan24680@gmail.com</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>이메일 알림으로 최신 상태를 유지해보세요</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="이메일을 입력하세요"/><br />
+              <input type='hidden' name='btr_url' value='https://yechan2468.github.ioindex.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">이메일 주소를 입력하면이 웹 사이트의 뉴스 레터 수신에 동의하는 것입니다.</small>
+              <button type="submit" class="btn btn-info"> 제출 </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

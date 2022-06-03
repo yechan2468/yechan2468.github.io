@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hugo로 블로그 만들기</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+<meta property="og:title" content="Hugo로 블로그 만들기" />
+<meta property="og:description" content="Hugo &#43; Github Pages를 이용해 나만의 개발 블로그 만들기" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yechan2468.github.io/posts/review/src/make-blog-review/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-03T14:20:40+09:00" />
+<meta property="article:modified_time" content="2022-06-03T14:20:40+09:00" /><meta property="og:site_name" content="Yechan&#39;s Blog" />
+
+
+
+    
+    
+<meta name="description" content="Hugo &#43; Github Pages를 이용해 나만의 개발 블로그 만들기" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      Yechan&#39;s Blog</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="찾기" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">게시글</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/computer-science/">Computer Science</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/operating-system/" title="Operating System">Operating System</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/data-structure/" title="Data Structure">Data Structure</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/algorithm/" title="Algorithm">Algorithm</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/network/" title="Computer Network">Computer Network</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/computer-science/software-engineering/" title="Software Engineering">Software Engineering</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/algorithm-problem/">Algorithm Problem</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/bfs-dfs/" title="BFS / DFS">BFS / DFS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/bruteforce/" title="Bruteforce">Bruteforce</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/dynamic-programming/" title="Dynamic Programming">Dynamic Programming</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/greedy/" title="Greedy">Greedy</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/implementation/" title="Implementation">Implementation</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/mathematics/" title="Mathematics">Mathematics</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/sorting/" title="Sorting">Sorting</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/algorithm-problem/string/" title="String">String</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/language/">Language</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/language/python/">Python</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/language/python/src/" title="파이썬 설치">파이썬 설치</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/framework-tool/">Framework / Tool</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/framework-tool/spring-boot/" title="Spring Boot">Spring Boot</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/review/">Review</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/review/src/make-blog-review/" title="Hugo로 블로그 만들기">Hugo로 블로그 만들기</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/opinion/" title="Opinion">Opinion</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://yechan2468.github.io/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/yechan_hu3a4393067c8576d23847817abbc35178_19485_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">이예찬</h5>
+          <p>2022년 6월 3일 금요일</p>
+        </div>
+
+        <div class="title">
+          <h1>Hugo로 블로그 만들기</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <h2 id="이-글에서는">이 글에서는&hellip;</h2>
+<!-- raw HTML omitted -->
+<p>Hugo를 이용해 정적 웹사이트를 만들고, Github Pages를 통해 나만의 웹사이트를 배포합니다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h2 id="hugo란">Hugo란?</h2>
+<!-- raw HTML omitted -->
+<p><a href="https://gohugo.io/">Hugo 공식 웹사이트 바로가기</a></p>
+<p>Hugo는 정적 웹사이트를 쉽게 만들게 해주는 툴이다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h2 id="hugo를-선택한-이유">Hugo를 선택한 이유</h2>
+<!-- raw HTML omitted -->
+<h3 id="블로그를-만든-이유">블로그를 만든 이유</h3>
+<!-- raw HTML omitted -->
+<p>우선 내가 블로그를 만든 이유를 간단히 적어보면 다음과 같다.<!-- raw HTML omitted --></p>
+<ol>
+<li>개발이나 공부를 할 때 기록할 곳이 필요했다. 공부를 하더라도 몇 개월 있으면 공부했던 내용을 잊어버리는 일이 잦았다.</li>
+<li>개인 웹사이트가 있으면 내가 공부한 것이 무엇인지, 내가 관심 있는 것이 무엇인지 효과적으로 사람들에게 알릴 수 있다.</li>
+<li>지금까지 여러 개발 블로그들을 통해 문제를 해결한 경험이 많은데, 도움을 받았으니 나도 도움을 주고 싶었다.</li>
+</ol>
+<p>이런 이유로 블로그를 만들게 되었고, 위 이유를 충족하기 위해서는 사용자 별로 DB에서 데이터를 나눠준다던지 인증을 한다던지 하는 과정이 필요하지 않았다.<!-- raw HTML omitted -->
+그래서, 원래 계획은 내 개인 웹 서버를 만들어서 서비스하는 것이었지만, 너무 많은 공수가 들어간다는 생각이 들어 동적 웹사이트보다는 정적 웹사이트로 내 블로그를 만들어보기로 했다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h3 id="static-web-generator">Static web generator</h3>
+<!-- raw HTML omitted -->
+<p>구글에서 정적 웹사이트를 만들어주는 도구(static web generator)를 찾아보면 다음 친구들이 나온다.<!-- raw HTML omitted -->
+(모두 오픈소스 프로젝트들이다)<!-- raw HTML omitted --></p>
+<h4 id="jekyll">Jekyll</h4>
+<ul>
+<li>루비 기반</li>
+<li>가장 인기 있는 툴. 사람들이 많이 사용하기 때문에 문제가 발생했을 때 커뮤니티에서 쉽게 도움을 받을 수 있음</li>
+<li>컨텐츠가 많으면 빌드 속도가 느려짐</li>
+</ul>
+<h4 id="hexo">Hexo</h4>
+<ul>
+<li>Node.js 기반</li>
+<li>한국어 documentation이 잘 되어 있음</li>
+<li>확장성이 뛰어남 (<a href="https://hexo.io/plugins/">공식 플러그인 링크</a>)</li>
+</ul>
+<h4 id="hugo">Hugo</h4>
+<ul>
+<li>Go 언어 기반</li>
+<li>아주 빠른 빌드 속도</li>
+<li>문서화가 잘 되어 있음</li>
+<li>플러그인, 테마 등 확장성이 다소 좋지 않음</li>
+</ul>
+<p>나는 이 중에서 Hugo를 선택했다.<!-- raw HTML omitted -->
+내가 원하는 기능은 공부한 내용을 markdown 파일에 적어서 업로드만 하면 되는 것이었는데, 따라서 많은 플러그인들이 필요 없었기 때문이다.<!-- raw HTML omitted -->
+또한, 내가 공부한 내용을 블로그에 업로드하는 과정을 스트레스로 만들고 싶지 않았다.<!-- raw HTML omitted -->
+사실 이전에도 내가 공부한 것들을 블로그에 올리려고 시도했으나, 공부한 것에 비해 글을 쓰는 시간이 너무 오버헤드로 다가와서 글을 쓰는 것을 포기한 적이 있다.<!-- raw HTML omitted -->
+따라서 글을 쓰는 것 이외의 귀찮은 일들 (업로드, 디자인, 기타 관리)을 최소화하고 싶었다.<!-- raw HTML omitted -->
+위에 단점으로 &lsquo;플러그인, 테마 등 확장성이 다소 좋지 않음&rsquo;이라고 적어놓기는 했으나,<!-- raw HTML omitted --></p>
+<ul>
+<li>마크다운 형식 지원</li>
+<li>댓글 기능 지원</li>
+<li>여러 플랫폼에 배포 지원</li>
+<li>문제 발생 시 찾아볼 공식 사이트 문서화 잘 되어 있음</li>
+</ul>
+<p>등등 블로깅을 할 때 기본적인 요소들이 충분히 있다고 생각해 Hugo를 선택했다. <!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h2 id="hugo-설치하기">Hugo 설치하기</h2>
+<!-- raw HTML omitted -->
+<p>Hugo 설치는 다음 과정을 따르면 된다. 난이도가 어렵지 않으니 추가적인 설명은 생략하겠다.<!-- raw HTML omitted --></p>
+<p><a href="https://gohugo.io/getting-started/quick-start/">Hugo 공식 사이트 getting-started</a><!-- raw HTML omitted --></p>
+<p>Hugo에서는 기본 테마가 없고, <a href="https://themes.gohugo.io/">Hugo 공식 사이트</a>에서 테마를 선택해 따로 설치해주어야 한다.<!-- raw HTML omitted -->
+이때, 테마 별로 설치 방법이 상이한 경우가 있으므로, 테마 안의 공식 문서를 잘 확인하고 과정을 따라주어야 한다.<!-- raw HTML omitted -->
+모든 과정을 마치고 터미널 창에 <code>hugo version</code>을 입력했을 때, (Windows 운영체제 기준으로 설명)<!-- raw HTML omitted --></p>
+<pre tabindex="0"><code>&gt; hugo version
+&#39;hugo&#39;은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다.
+</code></pre><p>또는</p>
+<pre tabindex="0"><code>&gt; hugo version
+hugo : &#39;hugo&#39; 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
+...
+</code></pre><p>와 같은 에러 메시지가 등장한다면, 환경 변수를 설정해주어야 한다.<!-- raw HTML omitted -->
+<a href="https://devji.tistory.com/entry/Windows-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98-%EC%84%A4%EC%A0%95">환경 변수 설정하는 방법</a><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+그렇지 않고 <!-- raw HTML omitted --></p>
+<pre tabindex="0"><code>&gt; hugo version
+hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
+</code></pre><p>와 같이 버전이 나타난다면 Hugo가 성공적으로 설치된 것이다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h3 id="hugo-기본-명령어br">Hugo 기본 명령어<!-- raw HTML omitted --></h3>
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code>hugo server
+</code></pre><p>작업한 내용을 로컬에서 확인할 수 있도록 로컬 웹 서버를 열어준다.<!-- raw HTML omitted -->
+여기에서 웹페이지에 문제가 있는지 확인한 후 빌드를 할 수 있다.<!-- raw HTML omitted -->
+포트 기본값은 1313이다.<!-- raw HTML omitted -->
+위 명령어를 입력한 뒤 <a href="http://localhost:1313">http://localhost:1313</a>를 확인해보자.<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<pre tabindex="0"><code>hugo
+</code></pre><p>작업한 내용을 빌드한다. 빌드한 내용은 <code>&lt;hugo new site를 통해 만든 디렉터리&gt;/public/</code>에 저장된다.<!-- raw HTML omitted -->
+참고: <code>-D</code> 옵션을 주면 초안(draft)까지 빌드할 수 있다.<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h2 id="toha-테마-설치하기">Toha 테마 설치하기</h2>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>아래부터는 Toha가 아닌 다른 테마를 선택했다면 도움을 받지 못할 수 있습니다.<!-- raw HTML omitted -->
+빠르게 자신만의 웹사이트를 만들어보고 싶다면 아래 과정을 따라도 되지만, 다른 테마 디자인을 원하는 사람들은 <a href="https://themes.gohugo.io/">여기</a>에서 테마를 선택해 주세요.</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<h3 id="toha-테마를-선택한-이유">Toha 테마를 선택한 이유</h3>
+<!-- raw HTML omitted -->
+<p>나는 다음 이유 때문에 Toha 테마를 선택했다.<!-- raw HTML omitted --></p>
+<ol>
+<li>블로그를 포트폴리오 웹사이트로도 사용하고 싶었다.</li>
+<li>게시글을 카테고리 별로 잘 정리하고 싶었다.</li>
+<li>깔끔한 디자인을 사용하고 싶었다.</li>
+<li>한글을 지원해야 한다.</li>
+</ol>
+<p>Toha 테마는 위 요구사항들을 만족했고, 그래서 테마로 Toha를 골랐다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h3 id="toha-테마-설치하기-1">Toha 테마 설치하기</h3>
+<!-- raw HTML omitted -->
+<p>Toha 공식 사이트의 <a href="https://toha-guides.netlify.app/posts/getting-started/prepare-site/">Getting Started</a>에서 Toha 테마를 적용하는 방법을 확인할 수 있다.<!-- raw HTML omitted -->
+위 <code>hugo server</code> 명령어를 이용해 웹사이트에 깨지는 부분이 있는지 확인하면서, 차근차근 과정을 밟아가는 것을 추천한다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h4 id="자주-발생하는-에러">자주 발생하는 에러</h4>
+<!-- raw HTML omitted -->
+<p>웹사이트에 깨지는 부분이 있을 때 (주로 이미지 파일을 정해진 위치에 넣지 않았을 때) 다음 에러 메시지가 발생한다.<!-- raw HTML omitted --></p>
+<pre tabindex="0"><code>C:\yechan\code\blog&gt;hugo server
+Start building sites …
+hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
+ERROR 2022/06/03 15:33:26 render of &#34;page&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\_default\single.html:49:46&#34;: execute of template failed: template: _default/single.html:49:46: executing &#34;content&#34; at &lt;partial &#34;helpers/get-author-image.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\helpers\get-author-image.html:29:22&#34;: execute of template failed: template: partials/helpers/get-author-image.html:29:22: executing &#34;partials/helpers/get-author-image.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
+ERROR 2022/06/03 15:33:26 render of &#34;home&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\index.html:41:8&#34;: execute of template failed: template: index.html:41:8: executing &#34;index.html&#34; at &lt;partial &#34;sections/home.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\sections\home.html:111:29&#34;: execute of template failed: template: partials/sections/home.html:111:29: executing &#34;partials/sections/home.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
+Error: Error building site: failed to render pages: render of &#34;page&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\_default\single.html:49:46&#34;: execute of template failed: template: _default/single.html:49:46: executing &#34;content&#34; at &lt;partial &#34;helpers/get-author-image.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\helpers\get-author-image.html:29:22&#34;: execute of template failed: template: partials/helpers/get-author-image.html:29:22: executing &#34;partials/helpers/get-author-image.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
+Built in 283 ms
+</code></pre><p>위 에러 메시지는 author의 이미지가 없어 home이라는 page를 렌더링하는 데에 실패했다는 메시지이다.<!-- raw HTML omitted -->
+이미지를 로드하는 기본 위치는 <code>&lt;hugo new site를 통해 만든 디렉터리&gt;/assets/images</code>이다. (<code>/theme/toha/assets/images</code> 안에 넣어도 동작은 하나, 권장하지 않음)<!-- raw HTML omitted -->
+따라서, <code>/data/sections/author.yaml</code>에 <code>image: &quot;images/author/author.png&quot;</code>라고 적혀 있다면 <code>&lt;site 디렉터리&gt;/assets/images/author/author.png</code>를 저장해주면 된다.<!-- raw HTML omitted -->
+만약 <code>&lt;site 디렉터리&gt;/assets/</code> 디렉터리를 찾을 수 없다면, 새로 만들어주면 된다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h4 id="toha-테마">Toha 테마</h4>
+<!-- raw HTML omitted -->
+<p>위 Toha 웹사이트의 Getting Started 부분을 완료했고 <code>hugo server</code>를 통해 확인을 했을 때 깨지는 부분 없이 웹사이트가 잘 렌더링된다면, 적절히 <code>/data/</code>에 있는 yaml 파일들의 내용들과 <code>/assets/images/</code>의 이미지 파일들을 변경해주자.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h2 id="github-pages에-웹사이트-배포하기">Github Pages에 웹사이트 배포하기</h2>
+<!-- raw HTML omitted -->
+<p>이 과정은 Hugo 공식 웹사이트의 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a> 문서에 나와 있다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<p>정적 웹사이트를 배포하기 위해서 필요한 부분은 <code>/public/</code> 뿐이다. <!-- raw HTML omitted -->
+site 디렉터리(<code>/</code>), 배포용 디렉터리(<code>/public/</code>)를 각각의 repository에 저장하는 방법도 있겠지만, 여러 개의 repository를 만드는 방법보다는 site 디렉터리(<code>/</code>)만을 Github의 <code>&lt;사용자 이름&gt;/github.io</code> repository에 저장한 뒤, push가 발생하면 <code>Github Actions</code>를 이용해 자동으로 <code>/public/</code>을 배포용 branch <code>gh-pages</code>에 저장하는 방법을 Hugo에서는 권장한다.<!-- raw HTML omitted --></p>
+<p><strong>한 줄 요약: github.io repository로 push만 하면 배포됨</strong><!-- raw HTML omitted --></p>
+<p>위 문서를 진행하기 전, 다음 중 하나라도 되어있지 않다면 진행해 주자.<!-- raw HTML omitted --></p>
+<ol>
+<li>Git 설치</li>
+<li>Github 가입</li>
+<li>Github에서 <code>&lt;사용자 이름&gt;.github.io</code>라는 이름의 repository 생성</li>
+</ol>
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code>name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: &#39;latest&#39;
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == &#39;refs/heads/main&#39;
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+</code></pre><p>위 내용을 <code>/.github/workflows/gh-pages.yml</code>에 저장해 주고, (디렉터리나 파일이 없으면 새로 만들면 된다) git push를 한 뒤 Github Actions가 잘 작동하는지 확인한다.<!-- raw HTML omitted -->
+(Github의 <code>&lt;사용자 이름&gt;.github.io</code> repository의 Actions에서 예쁜 초록색 마크가 뜨는지 확인)<!-- raw HTML omitted -->
+그 후 또다시 Github의 <code>&lt;사용자 이름&gt;.github.io</code> repository에서 Settings &gt; Pages &gt; Source를 gh-pages로 바꿔주면 된다.<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<h3 id="자주-발생하는-에러-1">자주 발생하는 에러</h3>
+<!-- raw HTML omitted -->
+<h4 id="1-git-push가-안돼요">1. git push가 안돼요.</h4>
+<p>만약 <code>&lt;사용자 이름&gt;.github.io</code> repository를 처음 만들 때 <code>README.md</code>를 추가했다면 원격 저장소와 로컬 저장소의 내용이 달라 푸쉬가 되지 않을 수 있다.<!-- raw HTML omitted --></p>
+<ul>
+<li><code>&lt;사용자 이름&gt;.github.io</code> repository에 아무 내용이 없다면, repository를 삭제 후 아무 파일 없는 상태로 새로 만들어 다시 시도해보거나, 또는 <code>git fetch</code>를 시도해 보자.<!-- raw HTML omitted --></li>
+</ul>
+<h4 id="2-github-actions가-잘-동작하지-않아요">2. Github Actions가 잘 동작하지 않아요.</h4>
+<ul>
+<li><code>&lt;사용자 이름&gt;.github.io</code> repository의 Actions 탭에서 실패한 Action을 확인해보고, 어디에서 오류가 났는지 확인해 보자.<!-- raw HTML omitted --></li>
+<li><code>hugo server</code> 명령어를 통해 웹페이지를 렌더링하는 과정에서 오류가 없는지 다시 한번 확인해보자.<!-- raw HTML omitted --></li>
+<li>git의 submodule 문제라면, <code>git submodule sync</code>를 시도해 보자.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="마치며">마치며</h2>
+<!-- raw HTML omitted -->
+<p>이 글을 통해 Hugo로 웹사이트를 만드는 여러분들에게 도움이 됐다면 좋겠다. <!-- raw HTML omitted -->
+글을 작성하는 현재는 댓글 기능이 없지만 곧 추가할 예정이다.</p>
+<!-- raw HTML omitted -->
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/yechan2468/yechan2468.github.io/edit/main/content/posts%5creview%5csrc%5cmake-blog-review.md" title="이 페이지 개선하기" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                이 페이지 개선하기
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/framework-tool/spring-boot/" title="Spring Boot" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> 이전 게시글</div>
+        <div class="next-prev-text">Spring Boot</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/opinion/" title="Opinion" class="btn btn-outline-info">
+          <div>다음 게시글 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Opinion</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">목차</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#이-글에서는">이 글에서는&hellip;</a></li>
+    <li><a href="#hugo란">Hugo란?</a></li>
+    <li><a href="#hugo를-선택한-이유">Hugo를 선택한 이유</a>
+      <ul>
+        <li><a href="#블로그를-만든-이유">블로그를 만든 이유</a></li>
+        <li><a href="#static-web-generator">Static web generator</a>
+          <ul>
+            <li><a href="#jekyll">Jekyll</a></li>
+            <li><a href="#hexo">Hexo</a></li>
+            <li><a href="#hugo">Hugo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#hugo-설치하기">Hugo 설치하기</a>
+      <ul>
+        <li><a href="#hugo-기본-명령어br">Hugo 기본 명령어<!-- raw HTML omitted --></a></li>
+      </ul>
+    </li>
+    <li><a href="#toha-테마-설치하기">Toha 테마 설치하기</a>
+      <ul>
+        <li><a href="#toha-테마를-선택한-이유">Toha 테마를 선택한 이유</a></li>
+        <li><a href="#toha-테마-설치하기-1">Toha 테마 설치하기</a>
+          <ul>
+            <li><a href="#자주-발생하는-에러">자주 발생하는 에러</a></li>
+            <li><a href="#toha-테마">Toha 테마</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#github-pages에-웹사이트-배포하기">Github Pages에 웹사이트 배포하기</a>
+      <ul>
+        <li><a href="#자주-발생하는-에러-1">자주 발생하는 에러</a>
+          <ul>
+            <li><a href="#1-git-push가-안돼요">1. git push가 안돼요.</a></li>
+            <li><a href="#2-github-actions가-잘-동작하지-않아요">2. Github Actions가 잘 동작하지 않아요.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#마치며">마치며</a></li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>바로가기</h5>
+          
+          <ul>
+              
+              
+              
+              
+              
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>연락처:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:yechan24680@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>yechan24680@gmail.com</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>이메일 알림으로 최신 상태를 유지해보세요</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="이메일을 입력하세요"/><br />
+              <input type='hidden' name='btr_url' value='https://yechan2468.github.ioindex.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">이메일 주소를 입력하면이 웹 사이트의 뉴스 레터 수신에 동의하는 것입니다.</small>
+              <button type="submit" class="btn btn-info"> 제출 </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
