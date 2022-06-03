@@ -18,11 +18,17 @@ categories: []
 draft: false
 ---
 
+<br>
+
 ## 이 글에서는...
 
 <br>
 
 Hugo를 이용해 정적 웹사이트를 만들고, Github Pages를 통해 나만의 웹사이트를 배포합니다.<br>
+
+<br>
+
+---
 
 <br>
 
@@ -36,11 +42,15 @@ Hugo는 정적 웹사이트를 쉽게 만들게 해주는 툴이다.<br>
 
 <br>
 
+---
+
+<br>
+
 ## Hugo를 선택한 이유
 
 <br>
 
-### 블로그를 만든 이유
+#### 블로그를 만든 이유
 
 <br>
 
@@ -55,24 +65,26 @@ Hugo는 정적 웹사이트를 쉽게 만들게 해주는 툴이다.<br>
 
 <br>
 
-### Static web generator
+#### Static web generator
 
 <br>
 
 구글에서 정적 웹사이트를 만들어주는 도구(static web generator)를 찾아보면 다음 친구들이 나온다.<br>
 (모두 오픈소스 프로젝트들이다)<br>
 
-#### Jekyll
+<br>
+
+###### Jekyll
 - 루비 기반
 - 가장 인기 있는 툴. 사람들이 많이 사용하기 때문에 문제가 발생했을 때 커뮤니티에서 쉽게 도움을 받을 수 있음
 - 컨텐츠가 많으면 빌드 속도가 느려짐
 
-#### Hexo
+###### Hexo
 - Node.js 기반
 - 한국어 documentation이 잘 되어 있음
 - 확장성이 뛰어남 ([공식 플러그인 링크](https://hexo.io/plugins/))
 
-#### Hugo
+###### Hugo
 - Go 언어 기반
 - 아주 빠른 빌드 속도
 - 문서화가 잘 되어 있음
@@ -91,6 +103,10 @@ Hugo는 정적 웹사이트를 쉽게 만들게 해주는 툴이다.<br>
 - 문제 발생 시 찾아볼 공식 사이트 문서화 잘 되어 있음
 
 등등 블로깅을 할 때 기본적인 요소들이 충분히 있다고 생각해 Hugo를 선택했다. <br>
+
+<br>
+
+---
 
 <br>
 
@@ -133,7 +149,7 @@ hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2
 
 <br>
 
-### Hugo 기본 명령어<br>
+#### Hugo 기본 명령어<br>
 
 <br>
 
@@ -151,18 +167,25 @@ hugo
 ```
 
 작업한 내용을 빌드한다. 빌드한 내용은 `<hugo new site를 통해 만든 디렉터리>/public/`에 저장된다.<br> 
-참고: `-D` 옵션을 주면 초안(draft)까지 빌드할 수 있다.<br><br>
+참고: `-D` 옵션을 주면 초안(draft)까지 빌드할 수 있다.<br>
+
+<br>
+
+---
+
+<br>
 
 ## Toha 테마 설치하기
 
 <br>
 
 > 아래부터는 Toha가 아닌 다른 테마를 선택했다면 도움을 받지 못할 수 있습니다.<br>
+
 > 빠르게 자신만의 웹사이트를 만들어보고 싶다면 아래 과정을 따라도 되지만, 다른 테마 디자인을 원하는 사람들은 [여기](https://themes.gohugo.io/)에서 테마를 선택해 주세요.
 
 <br>
 
-### Toha 테마를 선택한 이유
+#### Toha 테마를 선택한 이유
 
 <br>
 
@@ -177,7 +200,7 @@ Toha 테마는 위 요구사항들을 만족했고, 그래서 테마로 Toha를 
 
 <br>
 
-### Toha 테마 설치하기
+#### Toha 테마 설치하기
 
 <br>
 
@@ -186,7 +209,7 @@ Toha 공식 사이트의 [Getting Started](https://toha-guides.netlify.app/posts
 
 <br>
 
-#### 자주 발생하는 에러
+###### 자주 발생하는 에러
 
 <br>
 
@@ -209,11 +232,15 @@ Built in 283 ms
 
 <br>
 
-#### Toha 테마 
+###### Toha 테마 
 
 <br>
 
 위 Toha 웹사이트의 Getting Started 부분을 완료했고 `hugo server`를 통해 확인을 했을 때 깨지는 부분 없이 웹사이트가 잘 렌더링된다면, 적절히 `/data/`에 있는 yaml 파일들의 내용들과 `/assets/images/`의 이미지 파일들을 변경해주자.<br>
+
+<br>
+
+---
 
 <br>
 
@@ -279,20 +306,24 @@ jobs:
 
 <br>
 
-### 자주 발생하는 에러
+#### 자주 발생하는 에러
 
 <br>
 
-#### 1. git push가 안돼요.
+###### 1. git push가 안돼요.
 
 만약 `<사용자 이름>.github.io` repository를 처음 만들 때 `README.md`를 추가했다면 원격 저장소와 로컬 저장소의 내용이 달라 푸쉬가 되지 않을 수 있다.<br>
 - `<사용자 이름>.github.io` repository에 아무 내용이 없다면, repository를 삭제 후 아무 파일 없는 상태로 새로 만들어 다시 시도해보거나, 또는 `git fetch`를 시도해 보자.<br>
 
-#### 2. Github Actions가 잘 동작하지 않아요.
+###### 2. Github Actions가 잘 동작하지 않아요.
 
 - `<사용자 이름>.github.io` repository의 Actions 탭에서 실패한 Action을 확인해보고, 어디에서 오류가 났는지 확인해 보자.<br>
 - `hugo server` 명령어를 통해 웹페이지를 렌더링하는 과정에서 오류가 없는지 다시 한번 확인해보자.<br>
 - git의 submodule 문제라면, `git submodule sync`를 시도해 보자.
+
+<br>
+
+---
 
 <br>
 
