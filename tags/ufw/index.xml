@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ufw on Yechan's Blog</title><link>https://yechan2468.github.io/tags/ufw/</link><description>Recent content in ufw on Yechan's Blog</description><generator>Hugo -- gohugo.io</generator><language>ko-kr</language><lastBuildDate>Mon, 27 Jun 2022 14:29:40 +0900</lastBuildDate><atom:link href="https://yechan2468.github.io/tags/ufw/index.xml" rel="self" type="application/rss+xml"/><item><title>안 쓰는 컴퓨터로 나만의 서버 만들기</title><link>https://yechan2468.github.io/posts/review/src/make-my-own-server-review/</link><pubDate>Mon, 27 Jun 2022 14:29:40 +0900</pubDate><guid>https://yechan2468.github.io/posts/review/src/make-my-own-server-review/</guid><description>이 글에서는&amp;hellip; 안 쓰는 일반 데스크탑 컴퓨터를 이용하여 개발 공부, NAS, 홈 자동화 등 다용도로 사용할 수 있는 나만의 서버를 만듭니다.
+Ubuntu Server를 설치한 뒤, 보안 및 네트워크 초기 설정을 합니다.
+하드웨어와 OS 선택하기 클라우드, 온프레미스? 온프레미스란 서버를 클라우드 같은 원격 환경에서 운영하는 방식이 아닌, 자체적으로 보유한 서버에 직접 설치해 운영하는 방식을 의미합니다.
+인정한다.
+돈을 조금만 내면 아래 과정들을 거치지 않아도 AWS, GCP 등 대형 클라우드 회사로부터 나만의 서버를 대여할 수 있다.</description></item></channel></rss>
