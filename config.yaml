@@ -66,3 +66,7 @@ params:
         metadata: 0
         inputPosition: top
         crossOrigin: anonymous
+    analytics:
+      enabled: true
+      google:
+        id: UA-168887070-1
