@@ -69,4 +69,7 @@ params:
     analytics:
       enabled: true
       google:
-        id: UA-168887070-1
+        # GA3
+        # id: UA-168887070-1
+        # GA4
+        id: G-1EYD6QHX3Q
