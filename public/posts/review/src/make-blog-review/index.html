@@ -22,12 +22,15 @@
 
 
 
+
+
+
 <meta property="og:title" content="Hugo로 블로그 만들기" />
 <meta property="og:description" content="Hugo &#43; Github Pages를 이용해 나만의 개발 블로그 만들기" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yechan2468.github.io/posts/review/src/make-blog-review/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-06-03T14:20:40+09:00" />
-<meta property="article:modified_time" content="2022-06-03T14:20:40+09:00" /><meta property="og:site_name" content="Yechan&#39;s Blog" />
+<meta property="article:published_time" content="2022-06-03T21:45:40+09:00" />
+<meta property="article:modified_time" content="2022-06-03T21:45:40+09:00" /><meta property="og:site_name" content="Yechan&#39;s Blog" />
 
 
 
@@ -45,6 +48,32 @@
 
 
 
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1EYD6QHX3Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-1EYD6QHX3Q', { 'anonymize_ip': false });
+}
+</script>
+
+        
+
+        
+        
+
+        
+        
     
 
 
@@ -83,6 +112,7 @@
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
       
+      
       </ul>
     </div>
   </div>
@@ -99,7 +129,7 @@
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
         <form class="mx-auto" method="get" action="/search">
-          <input type="text" name="keyword" value="" placeholder="찾기" data-search="" id="search-box" />
+          <input type="text" name="keyword" value="" placeholder="검색" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
@@ -273,6 +303,49 @@
   
     
     <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/language/java-remind/">Java Remind</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/language/java-remind/src/java-remind-1/" title="(1) 변수와 제어문">(1) 변수와 제어문</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/language/java-remind/src/java-remind-2/" title="(2) 객체지향프로그래밍">(2) 객체지향프로그래밍</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/language/java-remind/src/java-remind-3/" title="(3) 예외와 I/O">(3) 예외와 I/O</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
       <i class="fas fa-plus-circle"></i><a class="" href="/posts/language/python/">Python</a>
       
       <ul class="">
@@ -347,6 +420,15 @@
     <li><a class="active" href="/posts/review/src/make-blog-review/" title="Hugo로 블로그 만들기">Hugo로 블로그 만들기</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/review/src/make-my-own-server-review/" title="안 쓰는 컴퓨터로 나만의 서버 만들기">안 쓰는 컴퓨터로 나만의 서버 만들기</a></li>
+  
+
 
       </ul>
     </li>
@@ -376,7 +458,7 @@
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://yechan2468.github.io/images/default-hero.jpg);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/default-hero.jpg);'>
       </div>
 
       
@@ -395,7 +477,7 @@
           <br>
 <h2 id="이-글에서는">이 글에서는&hellip;</h2>
 <br>
-<p>Hugo를 이용해 정적 웹사이트를 만들고, Github Pages를 통해 나만의 웹사이트를 배포합니다.<br></p>
+<p>Hugo를 이용해 정적 웹사이트를 만들고, Github Pages를 통해 나만의 웹사이트를 배포합니다.</p>
 <br>
 <hr>
 <br>
@@ -466,32 +548,34 @@
 <p>Hugo에서는 기본 테마가 없고, <a href="https://themes.gohugo.io/">Hugo 공식 사이트</a>에서 테마를 선택해 따로 설치해주어야 한다.<br><br>
 이때, 테마 별로 설치 방법이 상이한 경우가 있으므로, 테마 안의 공식 문서를 잘 확인하고 과정을 따라주어야 한다.<br><br>
 모든 과정을 마치고 터미널 창에 <code>hugo version</code>을 입력했을 때, (Windows 운영체제 기준으로 설명)<br></p>
-<pre tabindex="0"><code>&gt; hugo version
-&#39;hugo&#39;은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다.
-</code></pre><p>또는</p>
-<pre tabindex="0"><code>&gt; hugo version
-hugo : &#39;hugo&#39; 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
-...
-</code></pre><p>와 같은 에러 메시지가 등장한다면, 환경 변수를 설정해주어야 한다.<br><br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; hugo version
+</span></span><span style="display:flex;"><span>&#39;hugo&#39;은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다.
+</span></span></code></pre></div><p>또는</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; hugo version
+</span></span><span style="display:flex;"><span>hugo : &#39;hugo&#39; 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>와 같은 에러 메시지가 등장한다면, 환경 변수를 설정해주어야 한다.<br><br>
 <a href="https://devji.tistory.com/entry/Windows-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98-%EC%84%A4%EC%A0%95">환경 변수 설정하는 방법</a><br><br>
 <br><br>
 그렇지 않고 <br></p>
-<pre tabindex="0"><code>&gt; hugo version
-hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
-</code></pre><p>와 같이 버전이 나타난다면 Hugo가 성공적으로 설치된 것이다.<br></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; hugo version
+</span></span><span style="display:flex;"><span>hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
+</span></span></code></pre></div><p>와 같이 버전이 나타난다면 Hugo가 성공적으로 설치된 것이다.<br></p>
 <br>
 <h4 id="hugo-기본-명령어br">Hugo 기본 명령어<br></h4>
 <br>
 <h5 id="hugo-server">hugo server</h5>
-<pre tabindex="0"><code>hugo server
-</code></pre><p>작업한 내용을 로컬에서 확인할 수 있도록 로컬 웹 서버를 열어준다.<br><br>
+<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; hugo server
+</span></span></code></pre></div><p>작업한 내용을 로컬에서 확인할 수 있도록 로컬 웹 서버를 열어준다.<br><br>
 여기에서 웹페이지에 문제가 있는지 확인한 후 빌드를 할 수 있다.<br><br>
 포트 기본값은 1313이다.<br><br>
 위 명령어를 입력한 뒤 <a href="http://localhost:1313">http://localhost:1313</a>를 확인해보자.<br></p>
 <br>
 <h5 id="hugo-1">hugo</h5>
-<pre tabindex="0"><code>hugo
-</code></pre><p>작업한 내용을 빌드한다. 빌드한 내용은 <code>&lt;hugo new site를 통해 만든 디렉터리&gt;/public/</code>에 저장된다.<br><br>
+<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; hugo
+</span></span></code></pre></div><p>작업한 내용을 빌드한다. 빌드한 내용은 <code>&lt;hugo new site를 통해 만든 디렉터리&gt;/public/</code>에 저장된다.<br><br>
 참고: <code>-D</code> 옵션을 주면 초안(draft)까지 빌드할 수 있다.<br></p>
 <br>
 <hr>
@@ -524,14 +608,15 @@ hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2
 <h5 id="자주-발생하는-에러">자주 발생하는 에러</h5>
 <br>
 <p>웹사이트에 깨지는 부분이 있을 때 (주로 이미지 파일을 정해진 위치에 넣지 않았을 때) 다음 에러 메시지가 발생한다.<br></p>
-<pre tabindex="0"><code>C:\yechan\code\blog&gt;hugo server
-Start building sites …
-hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
-ERROR 2022/06/03 15:33:26 render of &#34;page&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\_default\single.html:49:46&#34;: execute of template failed: template: _default/single.html:49:46: executing &#34;content&#34; at &lt;partial &#34;helpers/get-author-image.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\helpers\get-author-image.html:29:22&#34;: execute of template failed: template: partials/helpers/get-author-image.html:29:22: executing &#34;partials/helpers/get-author-image.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
-ERROR 2022/06/03 15:33:26 render of &#34;home&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\index.html:41:8&#34;: execute of template failed: template: index.html:41:8: executing &#34;index.html&#34; at &lt;partial &#34;sections/home.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\sections\home.html:111:29&#34;: execute of template failed: template: partials/sections/home.html:111:29: executing &#34;partials/sections/home.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
-Error: Error building site: failed to render pages: render of &#34;page&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\_default\single.html:49:46&#34;: execute of template failed: template: _default/single.html:49:46: executing &#34;content&#34; at &lt;partial &#34;helpers/get-author-image.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\helpers\get-author-image.html:29:22&#34;: execute of template failed: template: partials/helpers/get-author-image.html:29:22: executing &#34;partials/helpers/get-author-image.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
-Built in 283 ms
-</code></pre><p>위 에러 메시지는 author의 이미지가 없어 home이라는 page를 렌더링하는 데에 실패했다는 메시지이다.<br><br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>C:\yechan\code\blog&gt;hugo server
+</span></span><span style="display:flex;"><span>Start building sites …
+</span></span><span style="display:flex;"><span>hugo v0.100.0-27b077544d8efeb85867cb4cfb941747d104f765 windows/amd64 BuildDate=2022-05-31T08:37:12Z VendorInfo=gohugoio
+</span></span><span style="display:flex;"><span>ERROR 2022/06/03 15:33:26 render of &#34;page&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\_default\single.html:49:46&#34;: execute of template failed: template: _default/single.html:49:46: executing &#34;content&#34; at &lt;partial &#34;helpers/get-author-image.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\helpers\get-author-image.html:29:22&#34;: execute of template failed: template: partials/helpers/get-author-image.html:29:22: executing &#34;partials/helpers/get-author-image.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
+</span></span><span style="display:flex;"><span>ERROR 2022/06/03 15:33:26 render of &#34;home&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\index.html:41:8&#34;: execute of template failed: template: index.html:41:8: executing &#34;index.html&#34; at &lt;partial &#34;sections/home.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\sections\home.html:111:29&#34;: execute of template failed: template: partials/sections/home.html:111:29: executing &#34;partials/sections/home.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
+</span></span><span style="display:flex;"><span>Error: Error building site: failed to render pages: render of &#34;page&#34; failed: &#34;C:\yechan\code\blog\themes\toha\layouts\_default\single.html:49:46&#34;: execute of template failed: template: _default/single.html:49:46: executing &#34;content&#34; at &lt;partial &#34;helpers/get-author-image.html&#34; .&gt;: error calling partial: &#34;C:\yechan\code\blog\themes\toha\layouts\partials\helpers\get-author-image.html:29:22&#34;: execute of template failed: template: partials/helpers/get-author-image.html:29:22: executing &#34;partials/helpers/get-author-image.html&#34; at &lt;$authorImage.RelPermalink&gt;: nil pointer evaluating resource.Resource.RelPermalink
+</span></span><span style="display:flex;"><span>Built in 283 ms
+</span></span></code></pre></div><br>
+<p>위 에러 메시지는 author의 이미지가 없어 home이라는 page를 렌더링하는 데에 실패했다는 메시지이다.<br><br>
 이미지를 로드하는 기본 위치는 <code>&lt;hugo new site를 통해 만든 디렉터리&gt;/assets/images</code>이다. (<code>/theme/toha/assets/images</code> 안에 넣어도 동작은 하나, 권장하지 않음)<br><br>
 따라서, <code>/data/sections/author.yaml</code>에 <code>image: &quot;images/author/author.png&quot;</code>라고 적혀 있다면 <code>&lt;site 디렉터리&gt;/assets/images/author/author.png</code>를 저장해주면 된다.<br><br>
 만약 <code>&lt;site 디렉터리&gt;/assets/</code> 디렉터리를 찾을 수 없다면, 새로 만들어주면 된다.<br></p>
@@ -556,39 +641,39 @@ site 디렉터리(<code>/</code>), 배포용 디렉터리(<code>/public/</code>)
 <li>Github에서 <code>&lt;사용자 이름&gt;.github.io</code>라는 이름의 repository 생성</li>
 </ol>
 <br>
-<pre tabindex="0"><code>name: github pages
-
-on:
-  push:
-    branches:
-      - main  # Set a branch to deploy
-  pull_request:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: &#39;latest&#39;
-          # extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == &#39;refs/heads/main&#39;
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-</code></pre><p>위 내용을 <code>/.github/workflows/gh-pages.yml</code>에 저장해 주고, (디렉터리나 파일이 없으면 새로 만들면 된다) git push를 한 뒤 Github Actions가 잘 작동하는지 확인한다.<br><br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">github pages</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">main </span> <span style="color:#75715e"># Set a branch to deploy</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pull_request</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-20.04</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">submodules</span>: <span style="color:#66d9ef">true</span>  <span style="color:#75715e"># Fetch Hugo themes (true OR recursive)</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span>    <span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Hugo</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-hugo@v2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">hugo-version</span>: <span style="color:#e6db74">&#39;latest&#39;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#75715e"># extended: true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">hugo --minify</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-gh-pages@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">if</span>: <span style="color:#ae81ff">github.ref == &#39;refs/heads/main&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">github_token</span>: <span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">publish_dir</span>: <span style="color:#ae81ff">./public</span>
+</span></span></code></pre></div><p>위 내용을 <code>/.github/workflows/gh-pages.yml</code>에 저장해 주고, (디렉터리나 파일이 없으면 새로 만들면 된다) git push를 한 뒤 Github Actions가 잘 작동하는지 확인한다.<br><br>
 (Github의 <code>&lt;사용자 이름&gt;.github.io</code> repository의 Actions에서 예쁜 초록색 마크가 뜨는지 확인)<br><br>
 그 후 또다시 Github의 <code>&lt;사용자 이름&gt;.github.io</code> repository에서 Settings &gt; Pages &gt; Source를 gh-pages로 바꿔주면 된다.<br></p>
 <br>
@@ -629,10 +714,10 @@ jobs:
           
           <div class="col-md-6 btn-improve-page">
              
-               <a href="https://github.com/yechan2468/yechan2468.github.io/edit/main/content/posts%5creview%5csrc%5cmake-blog-review.md" title="이 페이지 개선하기" target="_blank" rel="noopener">
+               <a href="https://github.com/yechan2468/yechan2468.github.io/edit/main/content/posts%5creview%5csrc%5cmake-blog-review.md" title="이 페이지를 개선" target="_blank" rel="noopener">
             
                 <i class="fas fa-code-branch"></i>
-                이 페이지 개선하기
+                이 페이지를 개선
               </a>
           </div>
         
@@ -702,8 +787,20 @@ jobs:
   
 
   
+  
+
+  
+  
+
+  
+  
+
+  
     
     
+  
+  
+
   
   
 
@@ -715,7 +812,7 @@ jobs:
   
     <div class="col-md-6 previous-article">
       <a href="/posts/framework-tool/spring-boot/" title="Spring Boot" class="btn btn-outline-info">
-        <div><i class="fas fa-chevron-circle-left"></i> 이전 게시글</div>
+        <div><i class="fas fa-chevron-circle-left"></i> 이전</div>
         <div class="next-prev-text">Spring Boot</div>
       </a>
     </div>
@@ -726,9 +823,9 @@ jobs:
         
       
       <div class="col-md-6 next-article">
-        <a href="/posts/opinion/" title="Opinion" class="btn btn-outline-info">
-          <div>다음 게시글 <i class="fas fa-chevron-circle-right"></i></div>
-          <div class="next-prev-text">Opinion</div>
+        <a href="/posts/review/src/make-my-own-server-review/" title="안 쓰는 컴퓨터로 나만의 서버 만들기" class="btn btn-outline-info">
+          <div>다음 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">안 쓰는 컴퓨터로 나만의 서버 만들기</div>
         </a>
       </div>
     
@@ -737,6 +834,39 @@ jobs:
       <hr />
 
       
+      
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="yechan2468/yechan2468.github.io-comments"
+        data-repo-id="R_kgDOHkoLxg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOHkoLxs4CP6xC"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang=""
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
       
 
       
@@ -834,145 +964,6 @@ jobs:
 
     
     
-
-
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-  
-
-  
-  
-  
-
-  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
-    <div class="container pt-5">
-      <div class="row text-left">
-        
-        <div class="col-md-4 col-sm-12">
-          <h5>바로가기</h5>
-          
-          <ul>
-              
-              
-              
-              
-              
-              
-            
-              
-            
-          </ul>
-          
-        </div>
-        
-        
-        <div class="col-md-4 col-sm-12">
-          <h5>연락처:</h5>
-          <ul>
-            
-              
-                <li><a href=mailto:yechan24680@gmail.com target="_blank" rel="noopener">
-                  <span><i class="fas fa-envelope"></i></span> <span>yechan24680@gmail.com</span>
-                </a></li>
-              
-            
-          </ul>
-        </div>
-        
-        
-        
-          
-          <div class="col-md-4 col-sm-12">
-            <p>이메일 알림으로 최신 상태를 유지해보세요</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="이메일을 입력하세요"/><br />
-              <input type='hidden' name='btr_url' value='https://yechan2468.github.ioindex.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">이메일 주소를 입력하면이 웹 사이트의 뉴스 레터 수신에 동의하는 것입니다.</small>
-              <button type="submit" class="btn btn-info"> 제출 </button>
-              </div>
-              </form>
-            
-          </div>
-        
-      </div>
-    </div>
-    
-    
-    <hr />
-    <div class="container">
-      <div class="row text-left">
-        <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
-            Toha
-          </a>
-        </div>
-        <div class="col-md-4 text-center">© 2022 Copyright.</div>
-        <div class="col-md-4 text-right">
-          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
-          <img
-            src="/images/hugo-logo.svg"
-            alt="Hugo Logo"
-            height="18"
-          />
-          </a>
-        </div>
-      </div>
-    </div>
-    
-  </footer>
-
-
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="/js/popper.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -980,6 +971,7 @@ jobs:
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
 
 
     
