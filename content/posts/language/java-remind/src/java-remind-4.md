@@ -7,7 +7,7 @@ theme: Toha
 menu:
   sidebar:
     name: (4) 예외, I/O, 쓰레드
-    identifier: java-remind-3
+    identifier: java-remind-4
     parent: java-remind
     weight: 500
 tags: ["Java", "자바", "문법"]

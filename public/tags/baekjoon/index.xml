@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>baekjoon on Yechan&#39;s Blog</title>
+    <link>https://yechan2468.github.io/tags/baekjoon/</link>
+    <description>Recent content in baekjoon on Yechan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 12 Jan 2023 03:52:00 +0900</lastBuildDate><atom:link href="https://yechan2468.github.io/tags/baekjoon/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>백준 14501</title>
+      <link>https://yechan2468.github.io/posts/algorithm-problem/dynamic-programming/src/boj_14501/</link>
+      <pubDate>Thu, 12 Jan 2023 03:52:00 +0900</pubDate>
+      
+      <guid>https://yechan2468.github.io/posts/algorithm-problem/dynamic-programming/src/boj_14501/</guid>
+      <description>14501번: 퇴사
+시간 제한 메모리 제한 제출 정답 맞힌 사람 정답 비율 2 초 512 MB 72972 36656 23857 49.098% 문제 상담원으로 일하고 있는 백준이는 퇴사를 하려고 한다.
+오늘부터 N+1일째 되는 날 퇴사를 하기 위해서, 남은 N일 동안 최대한 많은 상담을 하려고 한다.
+백준이는 비서에게 최대한 많은 상담을 잡으라고 부탁을 했고, 비서는 하루에 하나씩 서로 다른 사람의 상담을 잡아놓았다.
+각각의 상담은 상담을 완료하는데 걸리는 기간 Ti와 상담을 했을 때 받을 수 있는 금액 Pi로 이루어져 있다.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

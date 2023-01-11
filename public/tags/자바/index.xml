@@ -6,12 +6,26 @@
     <description>Recent content in 자바 on Yechan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 15 Sep 2022 19:15:23 +0600</lastBuildDate><atom:link href="https://yechan2468.github.io/tags/%EC%9E%90%EB%B0%94/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>(3) 예외와 I/O</title>
+    <lastBuildDate>Fri, 16 Sep 2022 21:33:23 +0600</lastBuildDate><atom:link href="https://yechan2468.github.io/tags/%EC%9E%90%EB%B0%94/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>(3) 더 나은 코드를 위한 Java 문법</title>
       <link>https://yechan2468.github.io/posts/language/java-remind/src/java-remind-3/</link>
-      <pubDate>Thu, 15 Sep 2022 19:15:23 +0600</pubDate>
+      <pubDate>Fri, 16 Sep 2022 21:33:23 +0600</pubDate>
       
       <guid>https://yechan2468.github.io/posts/language/java-remind/src/java-remind-3/</guid>
+      <description>이 글은 &amp;lsquo;Java의 정석(남궁성) 3rd edition&amp;rsquo; 책의 내용을 요약한 것입니다.
+모든 내용을 요약한 것이 아니라, 저 개인의 자바 언어 문법 공부용, 기록용으로 작성한 글입니다.
+자바 언어를 리마인드하려는 사람들이 읽을 수도 있으나, 글이 친절하지 않을 수 있습니다.
+프로그래밍 언어를 접해보지 않은 사람들은 읽지 않는 것이 좋을 것입니다.
+Chapter 12 지네릭스, 열거형, 애너테이션 Generics의 제한 JDK 1.5부터 처음 도입되었다.
+다양한 타입의 객체들을 다루는 메서드나 컬렉션 클래스에 컴파일 시 타입 체크를 해주는 기능.</description>
+    </item>
+    
+    <item>
+      <title>(4) 예외, I/O, 쓰레드</title>
+      <link>https://yechan2468.github.io/posts/language/java-remind/src/java-remind-4/</link>
+      <pubDate>Thu, 15 Sep 2022 19:15:23 +0600</pubDate>
+      
+      <guid>https://yechan2468.github.io/posts/language/java-remind/src/java-remind-4/</guid>
       <description>이 글은 &amp;lsquo;Java의 정석(남궁성) 3rd edition&amp;rsquo; 책의 내용을 요약한 것입니다.
 모든 내용을 요약한 것이 아니라, 저 개인의 자바 언어 문법 공부용, 기록용으로 작성한 글입니다.
 자바 언어를 리마인드하려는 사람들이 읽을 수도 있으나, 글이 친절하지 않을 수 있습니다.
